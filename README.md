@@ -25,4 +25,4 @@ Create a user-friendly experience for visitors
 Implement interactive features to engage and captivate users
 
 How to View the Project:
-To view the project, simply follow this link: [[Portfolio Website URL](https:/     portfolio/)]
+To view the project, simply follow this link: [[Portfolio Website URL](https://h4tarakh.github.io/portfolio/)]
