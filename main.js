@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// https://script.google.com/macros/s/AKfycbx18lEP5tVVeKxgizqOgeSf9etgiZJHm1cL8L8EMj9vhvJDfofIDT-4QZ3tOyOj-WlQ4w/exec
   
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzMmoN5TT3Hiw56NE_fFCm831lItBfWXJ47irVa3rbDXmKSv7YmUf3TcYY6kFYErFw6ow/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx18lEP5tVVeKxgizqOgeSf9etgiZJHm1cL8L8EMj9vhvJDfofIDT-4QZ3tOyOj-WlQ4w/exec';
 const form = document.forms['submit-to-google-sheet'];
 const msg = document.getElementById("msg");
 
