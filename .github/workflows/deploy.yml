@@ -1,9 +1,11 @@
-name : Deploy to the website
+name: CD - Deploy Portfolio to GitHub Pages
 
 on:
   push:
     branches:
-      -main
+      - main
+
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,12 +16,12 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-  jobs:
-    deploy:
-      name : Deploy to GitHub pages
-      runs-on: ubuntu-22.04
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
 
-      environment:
+    environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
@@ -38,4 +40,3 @@ concurrency:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-  
