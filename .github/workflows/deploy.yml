@@ -1,0 +1,41 @@
+name : Deploy to the website
+
+on:
+  push:
+    branches:
+      -main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+  jobs:
+    deploy:
+      name : Deploy to GitHub pages
+      runs-on: ubuntu-22.04
+
+      environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Website Artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+  
