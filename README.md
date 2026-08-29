@@ -1,25 +1,61 @@
-Portfolio Website
+# 🚀 Personal Portfolio Website
 
-Project Overview
-Welcome to my Portfolio Website project! This project was created as part of my internship at Bharat Intern to showcase my skills and projects in the field of web development.
+A personal portfolio website showcasing my **DevOps, Cloud, AWS, Azure, Terraform, Docker, and CI/CD projects**.
 
-Technologies Used:
+## 🛠️ Tech Stack
 
-HTML
-CSS
-JavaScript
+* HTML5
+* CSS3
+* JavaScript
+* Git & GitHub
+* GitHub Actions
+* GitHub Pages
 
-Key Features:
+## 🔄 CI/CD Workflow
 
-Clean and intuitive design for easy navigation
-Interactive elements powered by JavaScript
-Responsive layout for a seamless experience on various devices
+```text
+Feature Branch
+      ↓
+Git Push
+      ↓
+Pull Request
+      ↓
+Main Branch
+      ↓
+GitHub Actions
+      ↓
+GitHub Pages
+      ↓
+Live Website
+```
 
-Project Goals:
+The website is automatically deployed to GitHub Pages whenever changes are merged into the `main` branch.
 
-Showcase my skills and projects
-Create a user-friendly experience for visitors
-Implement interactive features to engage and captivate users
+## 📂 Structure
 
-How to View the Project:
+```text
+portfolio/
+├── .github/workflows/
+│   └── cd.yml
+├── index.html
+├── style.css
+├── main.js
+├── images/
+└── README.md
+```
+
+## 🎯 DevOps Concepts
+
+* Git branching
+* Pull Requests
+* Continuous Deployment
+* GitHub Actions
+* Automated GitHub Pages deployment
+
 To view the project, simply follow this link: [[Portfolio Website URL](https://h4tarakh.github.io/portfolio/)]
+
+## 👨‍💻 Author
+
+Hariom Tarakh
+LinkedIn: https://www.linkedin.com/in/hariom-tarakh
+
